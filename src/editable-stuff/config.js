@@ -31,19 +31,6 @@ const mainBody = {
 };
 
 // ABOUT SECTION
-// If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
-//a) your Instagram username
-//      i.e:profilePictureLink:"johnDoe123",
-//b) a link to an hosted image
-//      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
-//c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/shahid.png"),
-//d) If you do not want any picture to be displayed, just leave it empty :)
-//      i.e: profilePictureLink: "",
-// For Resume either provide link to your resume or import from "editable-stuff" directory
-//     i.e resume: require("../editable-stuff/resume.pdf"),
-//         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-
 const about = {
   show: true,
   heading: "About Me",
@@ -56,14 +43,10 @@ const about = {
 };
 
 // PROJECTS SECTION
-// Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
-//      i.e: reposLength: 0,
-// If you want to display specfic projects, add the repository names,
-//      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "RachitGarg-12", //i.e."johnDoe12Gh"
+  gitHubUsername: "RachitGarg-12", 
   reposLength: 4,
   specificRepos: [],
 };
@@ -76,66 +59,56 @@ const leadership = {
     "As a seasoned React developer with a leadership background, my professional profile is characterized by a blend of technical prowess, adept project management skills, and strong communication acumen. My track record boasts successful endeavors in constructing large-scale applications, fine-tuning code for optimal performance, and implementing industry best practices. Beyond technical prowess, my leadership experience extends to guiding teams and projects, crafting and maintaining comprehensive project plans, managing timelines and budgets, and ensuring the punctual delivery of top-notch work.",
   images: [
     {
-      img: require("../editable-stuff/home.png"),
+      img: require("../editable-stuff/1.jpg"),
       label: "First slide label",
       paragraph:
-        "Home page of Task Management system where a user can manage all their tasks",
+        "Homepage of Mess Management System",
     },
     {
-      img: require("../editable-stuff/add.png"),
+      img: require("../editable-stuff/2.jpg"),
       label: "Second slide label",
-      paragraph: "User can add his task from this page",
+      paragraph: "User can login using their gmail id",
     },
     {
-      img: require("../editable-stuff/edit.png"),
-      label: "Second slide label",
+      img: require("../editable-stuff/3.jpg"),
+      label: "Third slide label",
       paragraph:
-        "If user Write somethings wrong then here he can edit the task ",
+        "User can add the meals which they need",
     },
     {
-      img: require("../editable-stuff/1.png"),
-      label: "Dashboards",
-      paragraph: "Dashboard with charts ",
+      img: require("../editable-stuff/4.jpg"),
+      label: "Payment",
+      paragraph: "User can pay the amount for tokens",
     },
     {
-      img: require("../editable-stuff/2.png"),
-      label: "Users Module",
-      paragraph: "Users can be managed from here ",
+      img: require("../editable-stuff/5.jpg"),
+      label: "Calendar",
+      paragraph: "Users can see all the buyed tokens here",
     },
     {
-      img: require("../editable-stuff/3.png"),
-      label: "Products",
-      paragraph: "All the Products Are listed here ",
+      img: require("../editable-stuff/6.jpg"),
+      label: "QR",
+      paragraph: "Using this QR user can go and eat the meal",
     },
     {
-      img: require("../editable-stuff/4.png"),
-      label: "Add Zone",
-      paragraph: "A Zone can be Added from here ",
+      img: require("../editable-stuff/7.jpg"),
+      label: "Admin page",
+      paragraph: "Admin can change the timings of the meal",
     },
     {
-      img: require("../editable-stuff/5.png"),
-      label: "Transactions",
-      paragraph: "All the Transactions Are listed here",
+      img: require("../editable-stuff/8.jpg"),
+      label: "Admin page",
+      paragraph: "Admin can see the total number of people for each meal",
     },
     {
-      img: require("../editable-stuff/6.png"),
-      label: "Vending Machine List",
-      paragraph: "All the Vending machines are listed here",
-    },
-    {
-      img: require("../editable-stuff/7.png"),
-      label: "Overview",
-      paragraph: "Vending Machine Overview ",
-    },
-    {
-      img: require("../editable-stuff/8.png"),
-      label: "Refill Vending Machine",
-      paragraph: "User can refill machine from here ",
+      img: require("../editable-stuff/9.jpg"),
+      label: "QR",
+      paragraph: "Scanned QR",
     },
   ],
   imageSize: {
-    width: "615",
-    height: "450",
+    width: "620",
+    height: "440",
   },
 };
 
@@ -146,17 +119,17 @@ const skills = {
   hardSkills: [
     { name: "React", value: 90 },
     { name: "JavaScript", value: 90 },
-    { name: "Data Structures", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "TypeScript", value: 80 },
+    { name: "Data Structures", value: 85 },
+    { name: "HTML/CSS", value: 50 },
+    { name: "TypeScript", value: 70 },
     { name: "SQL", value: 75 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
+    { name: "Goal-Oriented", value: 90 },
     { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
+    { name: "Positivity", value: 85 },
+    { name: "Adaptability", value: 80 },
+    { name: "Problem Solving", value: 80 },
     { name: "Empathy", value: 90 },
     { name: "Organization", value: 70 },
     { name: "Creativity", value: 90 },
